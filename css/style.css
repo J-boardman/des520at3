@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header, footer {
+  height: 10vh;
+}
+
+main {
+  min-height: 80vh;
+}
+/* * root index.html * */
+/* * PAGE 2: Classes * */
+#classes {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+#classes > article {
+  width: 300px;
+  padding: 1rem 4rem;
+  background-color: tomato;
+  border: 0.5rem solid rgb(201, 61, 37);
+  border-radius: 1rem;
+  transition: 250ms;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#classes > article:hover {
+  scale: 1.02;
+}
+

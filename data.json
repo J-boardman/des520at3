@@ -1,0 +1,107 @@
+{
+  "teachers": [
+  ],
+  
+  "classes": [
+    {
+      "name":"Body Attack",
+      "image": null
+    },
+    {
+      "name":"Zumba",
+      "image": null
+    },
+    {
+      "name":"Body pump",
+      "image": null
+    },
+    {
+      "name":"Body Step",
+      "image": null
+    },
+    {
+      "name":"Rpm",
+      "image": null
+    },
+    {
+      "name":"Body Balance",
+      "image": null
+    },
+    {
+      "name":"Body Combat",
+      "image": null
+    },
+    {
+      "name":"Body Jam",
+      "image": null
+    },
+    {
+      "name":"Body Vive",
+      "image": null
+    },
+    {
+      "name":"Cycle",
+      "image": null
+    },
+    {
+      "name":"Cycle Extreme",
+      "image": null
+    },
+    {
+      "name":"Pilates",
+      "image": null
+    },
+    {
+      "name":"Yoga",
+      "image": null
+    },
+    {
+      "name":"Aquat Fit / Mode",
+      "image": null
+    },
+    {
+      "name":"Boxing",
+      "image": null
+    },
+    {
+      "name":"Step Burner",
+      "image": null
+    },
+    {
+      "name":"Rejuvenate",
+      "image": null
+    },
+    {
+      "name":"Cardio Blitz",
+      "image": null
+    },
+    {
+      "name":"World dance & dance",
+      "image": null
+    },
+    {
+      "name":"Hilo and Fat Burner",
+      "image": null
+    },
+    {
+      "name":"Sculpt and Combo",
+      "image": null
+    },
+    {
+      "name":"ABT",
+      "image": null
+    },
+    {
+      "name":"Abs Blast",
+      "image": null
+    },
+    {
+      "name":"Tai Chi",
+      "image": null
+    },
+    {
+      "name":"Chi Ball",
+      "image": null
+    }
+  ]
+}

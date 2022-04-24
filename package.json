@@ -1,11 +1,11 @@
 {
   "name": "des520at3",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind-watch":"npx tailwindcss -i ./css/input.css -o ./css/main.css --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,5 @@
   "bugs": {
     "url": "https://github.com/J-boardman/des520at3/issues"
   },
-  "homepage": "https://github.com/J-boardman/des520at3#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.0.24"
-  }
+  "homepage": "https://github.com/J-boardman/des520at3#readme"
 }
