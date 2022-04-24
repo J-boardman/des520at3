@@ -1,37 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header, footer {
-  height: 10vh;
+  height: 5vh;
 }
 
+header h1,
+footer h3 {
+  margin: 0;
+}
+
+
 main {
-  min-height: 80vh;
+  min-height: 90vh;
+}
+
+.hide {
+  display: none;
 }
 /* * root index.html * */
+
+
 /* * PAGE 2: Classes * */
+
+.main-classes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+
+.main-classes dialog{
+  width: min(500px, 90vh);
+  height: fit-content;
+}
+
+.main-classes dialog::backdrop {
+  background-color: rgba(118, 18, 132, 0.4);
+}
+
+
+#search-class-name {
+  text-align: center;
+  padding: 0.5rem;
+}
+
 #classes {
   display: flex;
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 1rem;
+  margin: 1rem 0.5rem;
 }
 
 #classes > article {
-  width: 300px;
-  padding: 1rem 4rem;
   background-color: tomato;
-  border: 0.5rem solid rgb(201, 61, 37);
+  cursor: pointer;
+  display: flex;
+  gap: 2rem;
   border-radius: 1rem;
   transition: 250ms;
-  overflow: hidden;
-  cursor: pointer;
+  width: min(400px, 90vw);
+  height: fit-content;
 }
+
+#classes > article > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#classes > article button {
+  width: fit-content;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
 
 #classes > article:hover {
-  scale: 1.02;
+  scale: 1.07;
 }
 
+.class-image {
+  border-radius: 1rem 0 0 1rem;
+  width: 125px;
+  background-color: gray;
+}
+
+.teacher-details {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  height: fit-content;
+  position: relative;
+  right: 4.5rem;
+}
+
+.teacher-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: lightblue;
+  user-select: none;
+  transition: 250ms;
+}
+
+.teacher-image:hover {
+  scale: 1.14;
+}

@@ -1,106 +1,169 @@
 {
-  "teachers": [
+  "days": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
   ],
-  
+  "teachers": [
+    {
+      "id":1,
+      "name": "Zachary",
+      "image": "../images/sorachi.jpeg"
+    },
+    {
+      "id":2,
+      "name": "Jennifer",
+      "image": "../images/sorachi.jpeg"
+    },
+    {
+      "id":3,
+      "name": "Ed",
+      "image": "../images/sorachi.jpeg"
+    },
+    {
+      "id":4,
+      "name": "Jamal",
+      "image": "../images/sorachi.jpeg"
+    },
+    {
+      "id":5,
+      "name": "Sarah",
+      "image": "../images/sorachi.jpeg"
+    },
+    {
+      "id":6,
+      "name": "Sarah",
+      "image": "../images/sorachi.jpeg"
+    }
+  ],
   "classes": [
     {
-      "name":"Body Attack",
+      "id":1,
+      "name": "Body Attack",
       "image": null
     },
     {
-      "name":"Zumba",
+      "id":2,
+      "name": "Zumba",
       "image": null
     },
     {
-      "name":"Body pump",
+      "id":3,
+      "name": "Body pump",
       "image": null
     },
     {
-      "name":"Body Step",
+      "id":4,
+      "name": "Body Step",
       "image": null
     },
     {
-      "name":"Rpm",
+      "id":5,
+      "name": "Rpm",
       "image": null
     },
     {
-      "name":"Body Balance",
+      "id":6,
+      "name": "Body Balance",
       "image": null
     },
     {
-      "name":"Body Combat",
+      "id":7,
+      "name": "Body Combat",
       "image": null
     },
     {
-      "name":"Body Jam",
+      "id":8,
+      "name": "Body Jam",
       "image": null
     },
     {
-      "name":"Body Vive",
+      "id":9,
+      "name": "Body Vive",
       "image": null
     },
     {
-      "name":"Cycle",
+      "id":10,
+      "name": "Cycle",
       "image": null
     },
     {
-      "name":"Cycle Extreme",
+      "id":11,
+      "name": "Cycle Extreme",
       "image": null
     },
     {
-      "name":"Pilates",
+      "id":12,
+      "name": "Pilates",
       "image": null
     },
     {
-      "name":"Yoga",
+      "id":13,
+      "name": "Yoga",
       "image": null
     },
     {
-      "name":"Aquat Fit / Mode",
+      "id":14,
+      "name": "Aquat Fit / Mode",
       "image": null
     },
     {
-      "name":"Boxing",
+      "id":15,
+      "name": "Boxing",
       "image": null
     },
     {
-      "name":"Step Burner",
+      "id":16,
+      "name": "Step Burner",
       "image": null
     },
     {
-      "name":"Rejuvenate",
+      "id":17,
+      "name": "Rejuvenate",
       "image": null
     },
     {
-      "name":"Cardio Blitz",
+      "id":18,
+      "name": "Cardio Blitz",
       "image": null
     },
     {
-      "name":"World dance & dance",
+      "id":19,
+      "name": "World dance & dance",
       "image": null
     },
     {
-      "name":"Hilo and Fat Burner",
+      "id":20,
+      "name": "Hilo and Fat Burner",
       "image": null
     },
     {
-      "name":"Sculpt and Combo",
+      "id":21,
+      "name": "Sculpt and Combo",
       "image": null
     },
     {
-      "name":"ABT",
+      "id":22,
+      "name": "ABT",
       "image": null
     },
     {
-      "name":"Abs Blast",
+      "id":23,
+      "name": "Abs Blast",
       "image": null
     },
     {
-      "name":"Tai Chi",
+      "id":24,
+      "name": "Tai Chi",
       "image": null
     },
     {
-      "name":"Chi Ball",
+      "id":25,
+      "name": "Chi Ball",
       "image": null
     }
   ]

@@ -1,21 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/style.css">
-  <script type="module" src="../javascript/script.js" defer></script>
-  <title>Document</title>
-</head>
-<body>
-  <header></header>
-  <main>
-  <h2>Classes on offer</h2>
-    <input type="text" name="" id="class-search">
-    <section id="classes">
-    </section>
-  </main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="module" src="../javascript/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="main-classes">
+      <h2>I'm interested in:</h2>
+      <input
+        type="text"
+        id="search-class-name"
+        placeholder="Search..."
+        class="search-class-input"
+      />
+      <label for="search-class-name">
+        search by: class name, teacher or day
+      </label>
+      <section id="classes"></section>
+
+      <dialog>
+        <button class="close-modal">X</button>
+        <div id="class-booking-details"></div>
+        <form id="book-class">
+          <input type="text" required placeholder="Your Name" autocomplete=none>
+          <input type="text" required placeholder="Your Phone / Email" autocomplete=none>
+          <button>Confirm Booking!</button>
+        </form>
+      </dialog>
+    </main>
+    <footer></footer>
+  </body>
 </html>
