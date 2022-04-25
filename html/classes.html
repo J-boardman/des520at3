@@ -10,8 +10,8 @@
   </head>
   <body>
     <header></header>
+    <nav id="mobile-nav" class="mobile-nav"></nav>
     <main class="main-classes">
-      <h2>I'm interested in:</h2>
       <input
         type="text"
         id="search-class-name"
@@ -24,7 +24,9 @@
       <section id="classes"></section>
 
       <dialog>
-        <button class="close-modal">X</button>
+        <form method="dialog">
+          <button>X</button>
+        </form>
         <div id="class-booking-details"></div>
         <form id="book-class">
           <input type="text" required placeholder="Your Name" autocomplete=none>

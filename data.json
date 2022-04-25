@@ -12,159 +12,171 @@
     {
       "id":1,
       "name": "Zachary",
-      "image": "../images/sorachi.jpeg"
+      "image": "../images/teachers/zachary.png",
+      "primaryColor":"#73c3f9",
+      "secondaryColor":"#49b1f7"
     },
     {
       "id":2,
       "name": "Jennifer",
-      "image": "../images/sorachi.jpeg"
+      "image": "../images/teachers/jennifer.png",
+      "primaryColor":"#9589e8",
+      "secondaryColor":"#7e6dd1"
     },
     {
       "id":3,
-      "name": "Ed",
-      "image": "../images/sorachi.jpeg"
+      "name": "Edward",
+      "image": "../images/teachers/ed.png",
+      "primaryColor":"#b4d667",
+      "secondaryColor":"#88ce65"
     },
     {
       "id":4,
       "name": "Jamal",
-      "image": "../images/sorachi.jpeg"
+      "image": "../images/teachers/jamal.png",
+      "primaryColor":"#ffdd40",
+      "secondaryColor":"#ffc839"
     },
     {
       "id":5,
       "name": "Sarah",
-      "image": "../images/sorachi.jpeg"
+      "image": "../images/teachers/sarah.png",
+      "primaryColor":"#9589e8",
+      "secondaryColor":"#7e6dd1"
     },
     {
       "id":6,
-      "name": "Sarah",
-      "image": "../images/sorachi.jpeg"
+      "name": "Amanda",
+      "image": "../images/teachers/amanda.png",
+      "primaryColor":"#73c3f9",
+      "secondaryColor":"#49b1f7"
     }
   ],
   "classes": [
     {
       "id":1,
       "name": "Body Attack",
-      "image": null
+      "image": "../images/classes/boxer.png"
     },
     {
       "id":2,
       "name": "Zumba",
-      "image": null
+      "image": "../images/classes/dancer.png"
     },
     {
       "id":3,
       "name": "Body pump",
-      "image": null
+      "image": "../images/classes/weightlifter.png"
     },
     {
       "id":4,
       "name": "Body Step",
-      "image": null
+      "image": "../images/classes/walking.png"
     },
     {
       "id":5,
       "name": "Rpm",
-      "image": null
+      "image": "../images/classes/runner.png"
     },
     {
       "id":6,
       "name": "Body Balance",
-      "image": null
+      "image": "../images/classes/stretch.png"
     },
     {
       "id":7,
       "name": "Body Combat",
-      "image": null
+      "image": "../images/classes/boxer.png"
     },
     {
       "id":8,
       "name": "Body Jam",
-      "image": null
+      "image": "../images/classes/dancer.png"
     },
     {
       "id":9,
       "name": "Body Vive",
-      "image": null
+      "image": "../images/classes/dancer.png"
     },
     {
       "id":10,
       "name": "Cycle",
-      "image": null
+      "image": "../images/classes/cycle.png"
     },
     {
       "id":11,
       "name": "Cycle Extreme",
-      "image": null
+      "image": "../images/classes/cycle.png"
     },
     {
       "id":12,
       "name": "Pilates",
-      "image": null
+      "image": "../images/classes/yoga.png"
     },
     {
       "id":13,
       "name": "Yoga",
-      "image": null
+      "image": "../images/classes/yoga.png"
     },
     {
       "id":14,
       "name": "Aquat Fit / Mode",
-      "image": null
+      "image": "../images/classes/swimming.png"
     },
     {
       "id":15,
       "name": "Boxing",
-      "image": null
+      "image": "../images/classes/boxer.png"
     },
     {
       "id":16,
       "name": "Step Burner",
-      "image": null
+      "image": "../images/classes/walking.png"
     },
     {
       "id":17,
       "name": "Rejuvenate",
-      "image": null
+      "image": "../images/classes/refresh.png"
     },
     {
       "id":18,
       "name": "Cardio Blitz",
-      "image": null
+      "image": "../images/classes/treadmill.png"
     },
     {
       "id":19,
-      "name": "World dance & dance",
-      "image": null
+      "name": "Worldwide dance",
+      "image": "../images/classes/dancer.png"
     },
     {
       "id":20,
       "name": "Hilo and Fat Burner",
-      "image": null
+      "image": "../images/classes/tone.png"
     },
     {
       "id":21,
       "name": "Sculpt and Combo",
-      "image": null
+      "image": "../images/classes/tone.png"
     },
     {
       "id":22,
       "name": "ABT",
-      "image": null
+      "image": "../images/classes/weightlifter.png"
     },
     {
       "id":23,
       "name": "Abs Blast",
-      "image": null
+      "image": "../images/classes/abs.png"
     },
     {
       "id":24,
       "name": "Tai Chi",
-      "image": null
+      "image": "../images/classes/refresh.png"
     },
     {
       "id":25,
       "name": "Chi Ball",
-      "image": null
+      "image": "../images/classes/refresh.png"
     }
   ]
 }

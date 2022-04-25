@@ -1,13 +1,19 @@
-* {
+/* * General Styling * */
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-header, footer {
+header,
+footer {
   height: 5vh;
 }
 
@@ -16,7 +22,6 @@ footer h3 {
   margin: 0;
 }
 
-
 main {
   min-height: 90vh;
 }
@@ -24,34 +29,148 @@ main {
 .hide {
   display: none;
 }
-/* * root index.html * */
+/* * Header and footer components * */
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  gap: 20vw;
+  align-items: center;
+  transition: 250ms;
+}
 
+header > :first-child {
+  display: flex;
+  gap: 1rem;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.mobile-nav,
+.mobile-nav-active {
+  display: none;
+  background-color: white;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  width: 100vw;
+  transition: 1s;
+  z-index: 1;
+}
+.mobile-nav > a,
+.mobile-nav-active > a {
+  padding: 2rem 0;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.mobile-nav-active > a:hover {
+  background-color: #73c3f9;
+  font-size: 1.5rem;
+}
+
+.mobile-nav-active > a:focus {
+  background-color: #4fabf7;
+}
+
+
+.mobile-nav {
+  max-height: 0;
+  overflow-y: hidden;
+  transition: 400ms;
+}
+
+.mobile-nav-active {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow-y: auto;
+  height: fit-content;
+  max-height: 1000px;
+  border-bottom: 6px solid black;
+}
+
+.hamburger-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  border-radius: 1rem;
+  transition: all 500ms;
+  --distance: 3px
+}
+
+.hamburger-active {
+  gap: 0;
+}
+
+.top-active {
+  rotate: 45deg;
+  position: relative;
+  top: var(--distance);
+  scale: 1.1;
+}
+
+.middle-active {
+  opacity: 0;
+}
+
+.bottom-active {
+  rotate: -45deg;
+  position: relative;
+  bottom: var(--distance);
+  scale: 1.1;
+}
+
+
+/* * root index * */
 
 /* * PAGE 2: Classes * */
 
+/* Main layout */
 .main-classes {
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 90vh;
+  background-image: url();
 }
 
-
-.main-classes dialog{
-  width: min(500px, 90vh);
+/* Modal */
+.main-classes dialog {
+  width: min(500px, 90vw);
   height: fit-content;
 }
 
 .main-classes dialog::backdrop {
-  background-color: rgba(118, 18, 132, 0.4);
+  min-height: 150vh;
+  background-color: rgba(0,0,0,.7);
+  user-select: none;
 }
-
-
+/* Search bar input */
 #search-class-name {
   text-align: center;
   padding: 0.5rem;
 }
 
+/* Class card layout */
 #classes {
   display: flex;
   gap: 2rem;
@@ -60,58 +179,78 @@ main {
   margin: 1rem 0.5rem;
 }
 
-#classes > article {
-  background-color: tomato;
-  cursor: pointer;
+/* Class Card styling */
+.class-card {
   display: flex;
-  gap: 2rem;
+  gap: 0.5rem;
   border-radius: 1rem;
   transition: 250ms;
-  width: min(400px, 90vw);
-  height: fit-content;
+  width: min(400px,90vw);
 }
 
-#classes > article > div {
+.class-info {
   display: flex;
+  height: 100%;
   flex-direction: column;
-  justify-content: space-around;
+  gap: 0.5rem;
+  padding: 1rem;
 }
 
-#classes > article button {
-  width: fit-content;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+.class-info h3 {
+  margin: 0;
 }
 
-
-#classes > article:hover {
+.class-card:hover {
   scale: 1.07;
 }
 
 .class-image {
   border-radius: 1rem 0 0 1rem;
-  width: 125px;
-  background-color: gray;
+  width: min(200px, 40vw);
 }
 
-.teacher-details {
+.class-card p {
+  margin: 1rem 0;
+}
+
+.teacher-info {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
-  height: fit-content;
-  position: relative;
-  right: 4.5rem;
+  gap: 1rem;
 }
 
 .teacher-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: lightblue;
+  width: 60px;
+  height: 60px;
   user-select: none;
+  border-radius: 50%;
+}
+.open-modal {
+  padding: 10px 0;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 1.1rem;
   transition: 250ms;
 }
+.open-modal:hover {
+  scale: 1.1;
+  font-weight: bold;
+}
 
-.teacher-image:hover {
-  scale: 1.14;
+@media screen and (max-width:1000px) {
+  header {
+    justify-content: space-around;
+  }
+
+  .hamburger-wrapper {
+    display: flex;
+  }
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav,
+  .mobile-nav-active {
+    display: flex;
+  }
 }
