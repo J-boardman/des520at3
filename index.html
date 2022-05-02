@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <script type="module" src="./javascript/script.js" defer></script>
-  <title>Document</title>
-</head>
-<body>
-  <header></header>
-  <nav id="mobile-nav" class="mobile-nav"></nav>
-  <main>
-  </main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./javascript/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="index-hero h-[60vh] md:h-[80vh]">
+        <article
+          class="flex flex-col items-center justify-center gap-12 bg-black/70 text-white h-[60vh] md:h-[80vh] w-screen"
+        >
+          <div class="w-[60vw] h-2 rounded-lg bg-red-700"></div>
+          <p class="text-2xl text-center md:text-4xl">
+            THE NEW STANDARD FOR GYMS IN BRISBANE
+          </p>
+          <a href="/html/contact.html">
+            <button
+              class="bg-red-700 px-12 py-6 rounded-3xl shadow-red-400 hover:scale-110 transition-[400ms] hover:bg-red-600 text-2xl"
+            >
+              Get Started Today
+            </button>
+          </a>
+        </article>
+      </section>
+
+      <section
+        class="flex flex-col align-center justify-center text-white bg-neutral-900 w-screen"
+      >
+        <h2>OUR GYMS</h2>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-height: 7vh;
+  --neutral: rgb(23 23 23);
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--neutral);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: var(--header-height);
+  background-color: var(--neutral);
+  color: white;
+}
+
+main {
+  min-height: 93vh;
+}
+
+footer {
+  min-height: 5vh;
+}
+
+/* * HAMBURGERRRR * */
+.hamburger-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 500ms;
+  --distance: 3px
+}
+
+.hamburger-active {
+  gap: 0;
+}
+
+.top-active {
+  rotate: 45deg;
+  position: relative;
+  top: var(--distance);
+  scale: 1.1;
+}
+
+.middle-active {
+  opacity: 0;
+}
+
+.bottom-active {
+  rotate: -45deg;
+  position: relative;
+  bottom: var(--distance);
+  scale: 1.1;
+}
+
+.nav-active {
+  max-height: 1000px;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: var(--header-height);
+}
+
+/* * INDEX.HTML * */
+
+.index-hero {
+  background-image: url('/images/landing-page.jpeg');
+  background-size: cover;
+}

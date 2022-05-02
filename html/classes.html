@@ -4,37 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <script type="module" src="../javascript/script.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="module" src="/javascript/script.js" defer></script>
+    <title>Classes</title>
   </head>
   <body>
+    <!-- Renderered component -->
     <header></header>
-    <nav id="mobile-nav" class="mobile-nav"></nav>
-    <main class="main-classes">
-      <input
-        type="text"
-        id="search-class-name"
-        placeholder="Search..."
-        class="search-class-input"
-      />
-      <label for="search-class-name">
-        search by: class name, teacher or day
-      </label>
-      <section id="classes"></section>
-
-      <dialog>
-        <form method="dialog">
-          <button>X</button>
-        </form>
-        <div id="class-booking-details"></div>
-        <form id="book-class">
-          <input type="text" required placeholder="Your Name" autocomplete=none>
-          <input type="text" required placeholder="Your Phone / Email" autocomplete=none>
-          <button>Confirm Booking!</button>
-        </form>
-      </dialog>
-    </main>
+    <section class="text-center my-12">
+      <input class="p-2" type="text" placeholder="Search..." id="searchbar" />
+    </section>
+    <main
+      class="classes-main flex flex-wrap justify-center gap-6 md:gap-12 md:p-6"
+    ></main>
+    <!-- Renderered component -->
     <footer></footer>
+
+    <!-- This will be used in classes.js to render class cards from data.json -->
+    <template>
+      <article
+        class="text-center text-white bg-neutral-700 p-6 rounded-xl w-[40vw] md:w-48 max-h-72 hover:scale-110 hover:bg-neutral-600 flex flex-col justify-around items-center"
+      >
+        <img src="" alt="" class="w-32" />
+        <h1 class="text-xl"></h1>
+        <button
+          class="mt-6 bg-red-800 px-6 py-3 rounded-xl hover:bg-red-600 hover:scale-110"
+        >
+          Book class
+        </button>
+      </article>
+    </template>
+
+
+    <!-- Confirm booking pop up -->
+    <dialog class="gap-8 bg-neutral-800 text-white text-xl rounded-xl pb-12">
+      <form class="flex justify-end mb-8" method="dialog">
+        <button>X</button>
+      </form>
+      <article class="booking-details flex flex-col gap-8">
+        <p>Please confirm your booking for the <span></span> class.</p>
+        <form method="dialog">
+          <button class="book-class p-3 bg-red-800 rounded-xl hover:bg-red-600">
+            Confirm booking!
+          </button>
+        </form>
+      </article>
+    </dialog>
   </body>
 </html>

@@ -1,35 +1,12 @@
-import classListing from "./classListing.js";
-import classModal from "./classModal.js"
-import renderComponents from "./renderComponents.js"
+import makeHamburger from "./hamburger.js";
+import renderComponents from "./components.js";
+import renderClassList from "./classes.js"
 
-(async() => {
-  await classListing();
-  classModal();
-  await renderComponents("/html/components/footer.html", "footer");
+(async () => {
+  const data = await fetch('../data.json').then(res => res.json());
   await renderComponents("/html/components/header.html", "header");
-  await renderComponents("/html/components/nav.html", ".desktop-nav");
-  await renderComponents("/html/components/nav.html", ".mobile-nav");
+  await renderComponents("/html/components/footer.html", "footer");
+  await renderClassList();
   
-  const hamburger = document.querySelector('.hamburger-wrapper');
-  const mobileNav = document.querySelector('#mobile-nav');
-
-  hamburger.addEventListener('click', () => {
-    const top = hamburger.querySelector(':nth-child(1)');
-    
-    const middle = hamburger.querySelector(':nth-child(2)');
-    
-    const bottom = hamburger.querySelector(':nth-child(3)');
-    hamburger.classList.toggle('hamburger-active')
-    top.classList.toggle('top-active');
-    middle.classList.toggle('middle-active');
-    bottom.classList.toggle('bottom-active');
-
-    
-    mobileNav.classList.toggle('mobile-nav-active');
-    mobileNav.classList.toggle('mobile-nav');
-
-    
-  })
+  makeHamburger();
 })();
-
-
