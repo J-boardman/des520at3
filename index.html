@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
     <script type="module" src="./javascript/script.js" defer></script>
     <title>Document</title>
   </head>
   <body>
     <header></header>
     <main>
-      <section class="index-hero h-[60vh] md:h-[80vh]">
+      <!-- Hero Section -->
+      <section
+        class="index-hero bg-[url('/images/landing-page.jpeg')] bg-left md:bg-center md:bg-cover h-[60vh] md:h-[80vh]"
+      >
         <article
           class="flex flex-col items-center justify-center gap-12 bg-black/70 text-white h-[60vh] md:h-[80vh] w-screen"
         >
@@ -29,11 +36,34 @@
         </article>
       </section>
 
-      <section
-        class="flex flex-col align-center justify-center text-white bg-neutral-900 w-screen"
-      >
-        <h2>OUR GYMS</h2>
+      <!-- Home page info -->
+      <section class="my-12 flex flex-col justify-center items-center gap-12 mx-8">
+        <h2 class="text-2xl lg:text-3xl">Our gyms have an old school feel with a new school attitude!</h2>
+        <p class="md:w-1/2 lg:text-center leading-loose">
+          You are always welcome to look through any of our gyms at your own pace, with no pressure whatsoever. With hard-selling 'health club' sales consultants hustling you on every corner, we pride ourselves on being a refreshing change from that. Our 'no obligation, no pressure' attitude is clearly evident with our 
+          <span class="text-red-400 text-lg">$10 CASUAL visit rate.</span>
+        </p>
+        <p class="md:w-1/2 lg:text-center leading-loose">
+          <span class="text-red-400 text-lg">We are open 24:7.</span> You can now train any time you like, weekdays, weekends & public holidays. WE ARE OPEN! Unlike other so called 24:7 gyms, we are staffed all the time. If you need a late night workout, a protein bar or shake, supplements or a cool t-shirt, we are open for you. Our class times change constantly so check out on the web site for the timetable at each of our clubs.</p>
+        <p class="md:w-1/2 lg:text-center leading-loose text-xl">We have created gyms that we would love to train in and share that passion and enthusiasm with our valued members!</p>
+
       </section>
+
+      <!-- Link Cards -->
+      <section
+        class="flex flex-col md:flex-row flex-wrap align-center justify-center mb-12 text-white w-screen"
+      >
+      <a href="/html/about.html">
+        <article class="w-screen lg:w-[25vw] h-[30vh] bg-[url('/images/girl-sumo-dl.jpg')] bg-cover bg-center bg-red-200">
+          <div class="bg-[rgb(0,0,0,0.7)] hover:bg-[rgb(0,0,0,0.9)] transition-all h-full flex justify-center items-center text-3xl hover:text-4xl">
+            OUR PHILOSOPHY 
+          </div>
+        </article>
+      </a>
+      <article class="w-screen md:w-[25vw] h-[30vh] bg-red-300"></article>
+      <article class="w-screen md:w-[25vw] h-[30vh] bg-red-400"></article>
+      <article class="w-screen md:w-[25vw] h-[30vh] bg-red-500"></article>
+    </section>
     </main>
     <footer></footer>
   </body>

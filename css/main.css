@@ -10,6 +10,7 @@
 body {
   overflow-x: hidden;
   background-color: var(--neutral);
+  color: white;
 }
 
 header {
@@ -18,7 +19,6 @@ header {
   align-items: center;
   height: var(--header-height);
   background-color: var(--neutral);
-  color: white;
 }
 
 main {
@@ -79,8 +79,3 @@ footer {
 }
 
 /* * INDEX.HTML * */
-
-.index-hero {
-  background-image: url('/images/landing-page.jpeg');
-  background-size: cover;
-}

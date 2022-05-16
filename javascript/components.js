@@ -9,3 +9,6 @@ const renderComponents = async (filePath, querySelector, anonFunction) => {
 };
 
 export default renderComponents
+
+const add = (dog,cat) => dog + cat;
+
