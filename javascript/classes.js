@@ -4,7 +4,7 @@ const renderClassList = async () => {
   if (!template) return;
 
   // Fetch data / cache dom
-  const data = await fetch("../data.json").then((res) => res.json());
+  const data = await fetch('https://j-boardman.github.io/des520at3/data.json').then(res => res.json());
   const main = document.querySelector("main");
   const searchbar = document.querySelector("#searchbar");
   const modal = document.querySelector('dialog');
