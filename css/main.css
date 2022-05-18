@@ -18,7 +18,7 @@ header {
   justify-content: space-around;
   align-items: center;
   height: var(--header-height);
-  background-color: var(--neutral);
+  background-color: rgb(15 15 15);
 }
 
 main {
@@ -27,6 +27,11 @@ main {
 
 footer {
   min-height: 5vh;
+  background-color: rgb(15 15 15);
+}
+
+footer:first-child {
+  color: white;
 }
 
 /* * HAMBURGERRRR * */
@@ -39,6 +44,16 @@ footer {
 }
 
 .hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 1rem;
+  transition: all 500ms;
+  --distance: 3px
+}
+
+.hamburger + div,
+.hamburger + div + div {
   width: 25px;
   height: 3px;
   background-color: white;
@@ -73,9 +88,37 @@ footer {
   max-height: 1000px;
 }
 
+.header-active {
+  position: sticky;
+  top: 0;
+}
+
 .mobile-nav {
+  background-color: rgb(15 15 15);
   position: fixed;
   top: var(--header-height);
 }
 
-/* * INDEX.HTML * */
+/* FORM */
+#contact-form {
+  grid-template-columns: 0.5fr auto 3fr;
+}
+
+
+/* #contact-form > input:required ~ label::before {
+  content: '*';
+  color: rgb(239, 68, 68);
+} */
+
+/* input:invalid + p,
+textarea:invalid + p,
+#term-agreement:invalid + p {
+  visibility: visible;
+} */
+
+
+input:valid + p,
+textarea:valid + p,
+#term-agreement:valid + p {
+  visibility: hidden;
+}
