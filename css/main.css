@@ -67,10 +67,10 @@ footer:first-child {
 }
 
 .top-active {
-  rotate: 45deg;
+  transform: rotate(45deg);
   position: relative;
   top: var(--distance);
-  scale: 1.1;
+  /* transform: scale(1.1); */
 }
 
 .middle-active {
@@ -78,10 +78,10 @@ footer:first-child {
 }
 
 .bottom-active {
-  rotate: -45deg;
+  transform: rotate(-45deg);
   position: relative;
   bottom: var(--distance);
-  scale: 1.1;
+  /* scale: 1.1; */
 }
 
 .nav-active {
@@ -103,18 +103,6 @@ footer:first-child {
 #contact-form {
   grid-template-columns: 0.5fr auto 3fr;
 }
-
-
-/* #contact-form > input:required ~ label::before {
-  content: '*';
-  color: rgb(239, 68, 68);
-} */
-
-/* input:invalid + p,
-textarea:invalid + p,
-#term-agreement:invalid + p {
-  visibility: visible;
-} */
 
 
 input:valid + p,
