@@ -40,16 +40,16 @@
 
     <!-- Confirm booking pop up -->
     <dialog class="gap-8 bg-neutral-800 text-white text-xl rounded-xl pb-12">
-      <form class="flex justify-end mb-8" method="dialog">
-        <button>X</button>
-      </form>
+      <article class="flex justify-end mb-8">
+        <button class="close-dialog">X</button>
+      </article>
       <article class="booking-details flex flex-col gap-8">
         <p>Please confirm your booking for the <span></span> class.</p>
-        <form method="dialog">
-          <button class="book-class p-3 bg-red-800 rounded-xl hover:bg-red-600">
+        <article>
+          <button class="close-dialog book-class p-3 bg-red-800 rounded-xl hover:bg-red-600">
             Confirm booking!
           </button>
-        </form>
+        </article>
       </article>
     </dialog>
   </body>

@@ -23,6 +23,13 @@ import getHelp from "./help.js";
       errMsg.classList.add('invisible');
     }
 
+  }));
+
+  const dialogBtn = document.querySelectorAll('.close-dialog');
+  const dialog = document.querySelector('dialog')
+
+  dialogBtn.forEach(btn => btn.addEventListener('click', (e) => {
+    dialog.close()
   }))
 })();
 
