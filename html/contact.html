@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +10,7 @@
       rel="stylesheet"
     />
 
-    <script type="module" src="../javascript/script.js" defer></script>
+    <script type="module" src="../javascript/script.js"></script>
     <title>Contact Us</title>
   </head>
   <body>
@@ -75,9 +76,9 @@
           Contact Method: <span class="text-red-400">*</span>
         </label>
         <select name="contact-method" id="contact-method" class="col-span-2 md:col-span-1 bg-neutral-900 border-2 p-2 cursor-pointer text-center rounded-lg w-full" required>
-          <option value="phone"disabled selected>-- Preferred Contact Method --</option>
+          <option value="" disabled selected>-- Preferred Contact Method --</option>
           <option value="phone">Phone</option>
-          <option value="phone">Email</option>
+          <option value="email">Email</option>
         </select>
         <p class="col-span-full"></p>
         <i class="text-4xl md:text-2xl ri-message-line"><span class="md:hidden text-red-400 ">*</span></i>  

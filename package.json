@@ -1,5 +1,6 @@
 {
   "name": "des520at3",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
