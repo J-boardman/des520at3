@@ -4,8 +4,8 @@ import renderClassList from "./classes.js";
 import getHelp from "./help.js";
 
 (async () => {
-  await renderComponents("../html/components/header.html", "header");
-  await renderComponents("../html/components/footer.html", "footer");
+  await renderComponents("https://j-boardman.github.io/des520at3/html/components/header.html", "header");
+  await renderComponents("https://j-boardman.github.io/des520at3/html/components/footer.html", "footer");
   await renderClassList();
 
   makeHamburger();
