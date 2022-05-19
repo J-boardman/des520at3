@@ -30,7 +30,7 @@ const renderClassList = async () => {
       let temp = document.importNode(template, true);
 
       temp.content.querySelector("h1").textContent = name;
-      temp.content.querySelector("img").src = `.${image}`;
+      temp.content.querySelector("img").src = `https://j-boardman.github.io/des520at3${image}`;
 
       const btn = temp.content.querySelector("button");
       btn.value = id;
