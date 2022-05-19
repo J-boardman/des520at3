@@ -17,14 +17,17 @@
     <header></header>
     <main class="my-12 text-center mx-auto md:flex md:flex-col md:items-center">
       <h2 class="text-4xl mb-6">Contact Us!</h2>
+      <p class="col-span-3 text-red-400 mb-6">* Required field</p>
       <form id="contact-form" class="px-4 md:w-[600px] grid gap-2">
         <!-- NAME INPUT -->
-        <i class="text-4xl md:text-2xl ri-user-line"><span class="md:hidden text-red-400 ">*</span></i>
+        <i class="text-4xl md:text-2xl ri-user-line"
+          ><span class="md:hidden text-red-400">*</span></i
+        >
         <label for="name" class="text-xl pb-2 hidden md:block">
           Your Name: <span class="text-red-400 hidden md:inline-block">*</span>
         </label>
         <input
-          class="md:placeholder-transparent placeholder-slate-300 form-input text-center rounded-lg p-2 bg-neutral-900  invalid:border-2 valid:border-green-400 valid:border-4 focus:outline-none  col-span-2 md:col-span-1"
+          class="md:placeholder-transparent placeholder-slate-300 form-input text-center rounded-lg p-2 bg-neutral-900 invalid:border-2 valid:border-green-400 valid:border-4 focus:outline-none col-span-2 md:col-span-1"
           type="text"
           name="name"
           id="name"
@@ -32,17 +35,19 @@
           required
           placeholder="Enter your name"
         />
-        <p class="text-red-500 text-right invisible  col-start-1 col-end-4">
+        <p class="text-red-500 text-right invisible col-start-1 col-end-4">
           Please provide your first name and then last name with a space
           inbetween.
         </p>
         <!-- PHONE INPUT -->
-        <i class="text-4xl md:text-2xl ri-phone-line"><span class="md:hidden text-red-400 ">*</span></i>
+        <i class="text-4xl md:text-2xl ri-phone-line"
+          ><span class="md:hidden text-red-400">*</span></i
+        >
         <label for="phone" class="text-xl pb-2 hidden md:block">
           Phone: <span class="text-red-400 hidden md:inline-block">*</span>
         </label>
         <input
-          class="md:placeholder-transparent placeholder-slate-300 form-input text-center rounded-lg p-2 bg-neutral-900  invalid:border-2 valid:border-green-400 valid:border-4 focus:outline-none  col-span-2 md:col-span-1"
+          class="md:placeholder-transparent placeholder-slate-300 form-input text-center rounded-lg p-2 bg-neutral-900 invalid:border-2 valid:border-green-400 valid:border-4 focus:outline-none col-span-2 md:col-span-1"
           type="tel"
           name="phone"
           pattern="^(?:\+?(61))? ?(?:\((?=.*\)))?(0?[2-57-8])\)? ?(\d\d(?:[- ](?=\d{3})|(?!\d\d[- ]?\d[- ]))\d\d[- ]?\d[- ]?\d{3})$"
@@ -50,16 +55,18 @@
           placeholder="Enter your phone number"
           required
         />
-        <p class="text-red-500 text-right invisible  col-start-1 col-end-4">
+        <p class="text-red-500 text-right invisible col-start-1 col-end-4">
           Please provide a valid phone number.
         </p>
         <!-- Email INPUT -->
-        <i class="text-4xl md:text-2xl ri-mail-line"><span class="md:hidden text-red-400 ">*</span></i>
+        <i class="text-4xl md:text-2xl ri-mail-line"
+          ><span class="md:hidden text-red-400">*</span></i
+        >
         <label for="email" class="text-xl pb-2 hidden md:block">
           Email: <span class="text-red-400 hidden md:inline-block">*</span>
         </label>
         <input
-          class="md:placeholder-transparent placeholder-slate-300 form-input text-center rounded-lg p-2 bg-neutral-900  invalid:border-2 valid:border-green-400 valid:border-4 focus:outline-none  col-span-2 md:col-span-1"
+          class="md:placeholder-transparent placeholder-slate-300 form-input text-center rounded-lg p-2 bg-neutral-900 invalid:border-2 valid:border-green-400 valid:border-4 focus:outline-none col-span-2 md:col-span-1"
           type="email"
           name="email"
           pattern="^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
@@ -67,21 +74,35 @@
           required
           placeholder="Enter your email address"
         />
-        <p class="text-red-500 text-right invisible  col-start-1 col-end-4">
+        <p class="text-red-500 text-right invisible col-start-1 col-end-4">
           Please provide a valid email address.
         </p>
         <!-- Contact Method INPUT -->
-        <i class="text-4xl md:text-2xl ri-contacts-book-2-line"><span class="md:hidden text-red-400 ">*</span></i>
-        <label for="contact-method" class="hidden md:inline-block text-xl pb-2 mt-1">
+        <i class="text-4xl md:text-2xl ri-contacts-book-2-line"
+          ><span class="md:hidden text-red-400">*</span></i
+        >
+        <label
+          for="contact-method"
+          class="hidden md:inline-block text-xl pb-2 mt-1"
+        >
           Contact Method: <span class="text-red-400">*</span>
         </label>
-        <select name="contact-method" id="contact-method" class="col-span-2 md:col-span-1 bg-neutral-900 border-2 p-2 cursor-pointer text-center rounded-lg w-full" required>
-          <option value="" disabled selected>-- Preferred Contact Method --</option>
+        <select
+          name="contact-method"
+          id="contact-method"
+          class="col-span-2 md:col-span-1 bg-neutral-900 border-2 p-2 cursor-pointer text-center rounded-lg w-full"
+          required
+        >
+          <option value="" disabled selected>
+            -- Preferred Contact Method --
+          </option>
           <option value="phone">Phone</option>
           <option value="email">Email</option>
         </select>
         <p class="col-span-full"></p>
-        <i class="text-4xl md:text-2xl ri-message-line"><span class="md:hidden text-red-400 ">*</span></i>  
+        <i class="text-4xl md:text-2xl ri-message-line"
+          ><span class="md:hidden text-red-400">*</span></i
+        >
         <!-- MESSAGE INPUT -->
         <label for="message" class="text-xl pb-2 hidden md:block">
           Message: <span class="text-red-400 hidden md:inline-block">*</span>
@@ -95,35 +116,69 @@
           required
           placeholder="Leave us a message..."
         ></textarea>
-        <p class="text-red-500 text-right invisible  col-start-1 col-end-4">
-          Please provide a message. 
+        <p class="text-red-500 text-right invisible col-start-1 col-end-4">
+          Please provide a message.
         </p>
         <!-- SUBSCRIBE INPUT -->
-        <i class="hidden md:block text-4xl md:text-2xl ri-newspaper-line"><span class="md:hidden text-red-400 ">*</span></i>
-        <input type="checkbox" name="sign-up" id="sign-up" class=" hidden md:block h-2/3"/>
-        <label for="sign-up" class="hidden md:block text-xl cursor-pointer text-left pb-2">
-          Sign-up to the newsletter? 
+        <i class="hidden md:block text-4xl md:text-2xl ri-newspaper-line"
+          ><span class="md:hidden text-red-400">*</span></i
+        >
+        <input
+          type="checkbox"
+          name="sign-up"
+          id="sign-up"
+          class="hidden md:block h-2/3"
+        />
+        <label
+          for="sign-up"
+          class="hidden md:block text-xl cursor-pointer text-left pb-2"
+        >
+          Sign-up to the newsletter?
         </label>
         <!-- AGREE TO TERMS -->
-        <i class="text-4xl md:text-2xl ri-scales-line"><span class="md:hidden text-red-400 ">*</span></i>
-        <input type="checkbox" name="term-agreement" id="term-agreement" class="h-2/3 peer" required/>
-        <label for="term-agreement" class="text-xl cursor-pointer text-left pb-2">
-          Agree to the terms? <span class="text-red-400 hidden md:inline-block">*</span>
+        <i class="text-4xl md:text-2xl ri-scales-line"
+          ><span class="md:hidden text-red-400">*</span></i
+        >
+        <input
+          type="checkbox"
+          name="term-agreement"
+          id="term-agreement"
+          class="h-2/3 peer"
+          required
+        />
+        <label
+          for="term-agreement"
+          class="text-xl cursor-pointer text-left pb-2"
+        >
+          Agree to the terms?
+          <span class="text-red-400 hidden md:inline-block">*</span>
         </label>
-        <p class="text-red-500 pl-20 md:pl-0 text-left md:text-center invisible col-start-1 col-end-4 peer-invalid:visible">
+        <p
+          class="text-red-500 pl-20 md:pl-0 text-left md:text-center invisible col-start-1 col-end-4 peer-invalid:visible"
+        >
           You must agree to the terms.
         </p>
-        <p class="col-span-3 text-red-400">* Required field</p>
-        <input type="submit" value="Send" class="focus:bg-neutral-700 col-span-full py-4 my-4 cursor-pointer rounded-lg bg-neutral-600 hover:bg-neutral-400"/>
-      </form>          
-      <p>Need help? <span class="help-btn text-red-400 cursor-pointer"><u>Click here</u></span></p>
+        <input
+          type="submit"
+          value="Send"
+          class="focus:bg-neutral-700 col-span-full py-4 my-4 cursor-pointer rounded-lg bg-neutral-600 hover:bg-neutral-400"
+        />
+      </form>
+      <p>
+        Need help?
+        <span class="help-btn text-red-400 cursor-pointer"
+          ><u>Click here</u></span
+        >
+      </p>
     </main>
-    <dialog class="gap-8 bg-neutral-800 w-[400px] text-white text-xl rounded-xl pb-12">
+    <dialog
+      class="gap-8 bg-neutral-800 w-[400px] text-white text-xl rounded-xl pb-12"
+    >
       <article class="flex justify-between mb-8">
         <p>Here's some help:</p>
         <button class="close-dialog">X</button>
       </article>
-      <img src="../images/help.gif" alt="">
+      <img src="../images/help.gif" alt="" />
     </dialog>
     <footer></footer>
   </body>

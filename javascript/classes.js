@@ -4,12 +4,14 @@ const renderClassList = async () => {
   if (!template) return;
 
   // Fetch data / cache dom
-  const data = await fetch('https://j-boardman.github.io/des520at3/data.json').then(res => res.json());
+  const data = await fetch(
+    "https://j-boardman.github.io/des520at3/data.json"
+  ).then((res) => res.json());
   const main = document.querySelector("main");
   const searchbar = document.querySelector("#searchbar");
-  const modal = document.querySelector('dialog');
-  const bookingBtn = document.querySelector('.book-class');
-  const bookingDetails = document.querySelector('.booking-details');
+  const modal = document.querySelector("dialog");
+  const bookingBtn = document.querySelector(".book-class");
+  const bookingDetails = document.querySelector(".booking-details");
 
   // Search bar logic
   searchbar.addEventListener("input", (e) => {
@@ -42,11 +44,12 @@ const renderClassList = async () => {
 
   // Fake booking logic
   const openModal = (id) => {
-    const bookedClass = data.classes.find(result => result.id === parseInt(id));
+    const bookedClass = data.classes.find(
+      (result) => result.id === parseInt(id)
+    );
     modal.showModal();
-    modal.querySelector('span').textContent = bookedClass.name;
-  }
-
+    modal.querySelector("span").textContent = bookedClass.name;
+  };
 };
 
 export default renderClassList;

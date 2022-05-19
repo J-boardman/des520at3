@@ -1,127 +1,127 @@
 {
   "classes": [
     {
-      "id":1,
+      "id": 1,
       "name": "Body Attack",
       "image": "/images/classes/boxer.png"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Zumba",
       "image": "/images/classes/dancer.png"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "Body pump",
       "image": "/images/classes/weightlifter.png"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Body Step",
       "image": "/images/classes/walking.png"
     },
     {
-      "id":5,
+      "id": 5,
       "name": "Rpm",
       "image": "/images/classes/runner.png"
     },
     {
-      "id":6,
+      "id": 6,
       "name": "Body Balance",
       "image": "/images/classes/stretch.png"
     },
     {
-      "id":7,
+      "id": 7,
       "name": "Body Combat",
       "image": "/images/classes/boxer.png"
     },
     {
-      "id":8,
+      "id": 8,
       "name": "Body Jam",
       "image": "/images/classes/dancer.png"
     },
     {
-      "id":9,
+      "id": 9,
       "name": "Body Vive",
       "image": "/images/classes/dancer.png"
     },
     {
-      "id":10,
+      "id": 10,
       "name": "Cycle",
       "image": "/images/classes/cycle.png"
     },
     {
-      "id":11,
+      "id": 11,
       "name": "Cycle Extreme",
       "image": "/images/classes/cycle.png"
     },
     {
-      "id":12,
+      "id": 12,
       "name": "Pilates",
       "image": "/images/classes/yoga.png"
     },
     {
-      "id":13,
+      "id": 13,
       "name": "Yoga",
       "image": "/images/classes/yoga.png"
     },
     {
-      "id":14,
+      "id": 14,
       "name": "Aquat Fit / Mode",
       "image": "/images/classes/swimming.png"
     },
     {
-      "id":15,
+      "id": 15,
       "name": "Boxing",
       "image": "/images/classes/boxer.png"
     },
     {
-      "id":16,
+      "id": 16,
       "name": "Step Burner",
       "image": "/images/classes/walking.png"
     },
     {
-      "id":17,
+      "id": 17,
       "name": "Rejuvenate",
       "image": "/images/classes/refresh.png"
     },
     {
-      "id":18,
+      "id": 18,
       "name": "Cardio Blitz",
       "image": "/images/classes/treadmill.png"
     },
     {
-      "id":19,
+      "id": 19,
       "name": "Worldwide dance",
       "image": "/images/classes/dancer.png"
     },
     {
-      "id":20,
+      "id": 20,
       "name": "Hilo and Fat Burner",
       "image": "/images/classes/tone.png"
     },
     {
-      "id":21,
+      "id": 21,
       "name": "Sculpt and Combo",
       "image": "/images/classes/tone.png"
     },
     {
-      "id":22,
+      "id": 22,
       "name": "ABT",
       "image": "/images/classes/weightlifter.png"
     },
     {
-      "id":23,
+      "id": 23,
       "name": "Abs Blast",
       "image": "/images/classes/abs.png"
     },
     {
-      "id":24,
+      "id": 24,
       "name": "Tai Chi",
       "image": "/images/classes/refresh.png"
     },
     {
-      "id":25,
+      "id": 25,
       "name": "Chi Ball",
       "image": "/images/classes/refresh.png"
     }

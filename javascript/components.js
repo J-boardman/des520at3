@@ -8,4 +8,4 @@ const renderComponents = async (filePath, querySelector, anonFunction) => {
   anonFunction && anonFunction();
 };
 
-export default renderComponents
+export default renderComponents;

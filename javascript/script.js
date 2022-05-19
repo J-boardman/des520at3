@@ -10,26 +10,31 @@ import getHelp from "./help.js";
 
   makeHamburger();
   getHelp();
-  
-  const formInput = document.querySelectorAll('.form-input');
-  
-  formInput.forEach(input => input.addEventListener('input', () => {
-    const errMsg = input.nextElementSibling;
-    if(input.value !== ''){
-      input.classList.add('invalid:text-red-500','invalid:border-red-400');
-      errMsg.classList.remove('invisible');
-    } else {
-      input.classList.remove('invalid:text-red-500', 'invalid:border-red-400');
-      errMsg.classList.add('invisible');
-    }
 
-  }));
+  const formInput = document.querySelectorAll(".form-input");
 
-  const dialogBtn = document.querySelectorAll('.close-dialog');
-  const dialog = document.querySelector('dialog')
+  formInput.forEach((input) =>
+    input.addEventListener("input", () => {
+      const errMsg = input.nextElementSibling;
+      if (input.value !== "") {
+        input.classList.add("invalid:text-red-500", "invalid:border-red-400");
+        errMsg.classList.remove("invisible");
+      } else {
+        input.classList.remove(
+          "invalid:text-red-500",
+          "invalid:border-red-400"
+        );
+        errMsg.classList.add("invisible");
+      }
+    })
+  );
 
-  dialogBtn.forEach(btn => btn.addEventListener('click', (e) => {
-    dialog.close()
-  }))
+  const dialogBtn = document.querySelectorAll(".close-dialog");
+  const dialog = document.querySelector("dialog");
+
+  dialogBtn.forEach((btn) =>
+    btn.addEventListener("click", (e) => {
+      dialog.close();
+    })
+  );
 })();
-
